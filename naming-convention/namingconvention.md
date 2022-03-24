@@ -75,10 +75,7 @@ This section explains the differences between Algolia and Meilisearch in various
 | Topic | Algolia | Meilisearch |
 | --- | --- | --- |
 | index signature | initIndex() | index() |
-| Search Method Signature | index.search(string query, {
-     searchParameters
-      requestOptions
-}) | index.search(string query,object searchParameters) |
+| Search Method Signature | index.search(string query, {searchParameters,requestOptions}) | index.search(string query,object searchParameters) |
 | Add object Signature | index.saveObjects(array objects) | index.addDocuments(array objects) |
 | Partial Update Object Signature |  | index.updateDocuments(array objects) |
 | Delete all objects sign | index.deleteObjects(array objectIDs) | index.deleteAllDocuments() |
